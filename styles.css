@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: black; /* Black background color */
+}
+
+.game {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    color: blueviolet;
+    margin-bottom: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    background: purple; /* Purple background color */
+    border: 2px solid #000;
+    cursor: pointer;
+    color: white;
+}
+
+.cell.X {
+    color: cyan; /* Color of X */
+}
+
+.cell.O {
+    color: red; /* Color of O */
+}
+
+.cell:hover {
+    background: #800080; /* Darker purple for hover */
+}
+
+#resetBtn, #toggleModeBtn {
+    font-size: 1em;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #4caf50;
+    color: white;
+}
+
+.message, .turn {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+
+
+
